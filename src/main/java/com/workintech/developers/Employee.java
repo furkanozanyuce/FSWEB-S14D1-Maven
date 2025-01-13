@@ -1,0 +1,56 @@
+package com.workintech.developers;
+
+public class Employee {
+    private long id;
+    private String name;
+    private double salary;
+
+    //constructor
+    public Employee(long id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    //getter
+    public long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    //setter
+    public void setId(long id) {
+        this.id = id;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    //method
+    public void work() {
+        System.out.println("Employee starts to working");
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+}
